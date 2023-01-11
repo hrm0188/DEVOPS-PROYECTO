@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Validate') {
             steps {
-                dir("Servicio/Curso-Microservicios"){
+                dir("Servicios/Curso-Microservicios"){
                     sh "docker build -t microservicio ."
                 }
             }
