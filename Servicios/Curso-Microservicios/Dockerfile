@@ -1,4 +1,4 @@
-FROM maven:3.8.6-jdk-11 as builder
+FROM maven:3.8.5-jdk-11 as builder
 WORKDIR /workspace/app
 COPY . .
 RUN ["mvn", "clean", "package"]
